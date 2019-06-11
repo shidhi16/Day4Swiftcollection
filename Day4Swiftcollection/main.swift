@@ -38,10 +38,18 @@ else{
 
 var x = Int()
 print(x)
-var country :[String]?
+
+let otherCountries = ["Pak", "Russia", "UK"]
+var country :[String]!
+
 country = [String]()
 
-var b : [String]?
+//country += otherCountries
+//country += ["Pak", "Russia", "UK"]
+country += otherCountries
+
+
+//var b : [String]?
 //b = [String]()
 if var c = country
 {
