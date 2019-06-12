@@ -36,8 +36,11 @@ else{
     print("Array contains some elements")
 }
 
+
 var x = Int()
 print(x)
+
+
 
 let otherCountries = ["Pak", "Russia", "UK"]
 var country :[String]!
@@ -48,9 +51,6 @@ country = [String]()
 //country += ["Pak", "Russia", "UK"]
 country += otherCountries
 
-
-//var b : [String]?
-//b = [String]()
 if var c = country
 {
     c.append("India")
@@ -61,4 +61,93 @@ if var c = country
 
 print("No. of countries : \(country!.count)")
 
+//Recurssion Array example
 
+
+
+//Recursion  Example
+//func printN(n: Int)
+//{
+   // if(n == 0)
+    //{
+      //  return
+    //}
+   // else
+    //{
+      //  printN(n: n - 1)
+        //print(n)
+    //}
+//}
+
+//print("*********************")
+//printN(n: 10)
+
+
+//func printThereverseArray(arr: [String], int index)
+//{
+  //  if arr.isEmpty{
+    //    return
+   // }
+    //else
+    //{
+      //  if n == 0
+       // {
+         //   return
+       // }
+        //else
+        //{
+          //  print(arr[index])
+           // printTheReverseArray(arr: arr, index: index-1)
+        //}
+    //}
+//}
+
+
+//print("*********Array in reverse order**********")
+//func printTheReverseArray(arr: [String], index: Int)
+//{
+  //  if arr.isEmpty{
+   //     return
+    //}
+   // else{
+     //   if index == -1
+       // {
+            
+            
+     //   }
+   // }
+//}
+
+var countryDictionary = ["key" : "value",
+                         "INR" : "India",
+                         "CAD" : "Canada",
+                         "USD" : "United States Of America"
+                        ]
+
+print(countryDictionary)
+
+print(countryDictionary["USA"] ?? "Key Not Exist")
+print(countryDictionary["USA"]!)
+
+print(countryDictionary["Pak"] ?? "Key not exist")
+
+if let c = countryDictionary["PAK"]
+{
+    print(c)
+}
+
+for c in countryDictionary
+
+{
+    print(c)
+    print(c.key, c.value)
+}
+
+countryDictionary["PAK"] = "Pakistan"
+countryDictionary["PAK"] = "New Pakistan"
+
+for (k,v) in countryDictionary
+
+{
+    print(k,v)
+}
