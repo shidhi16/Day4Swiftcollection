@@ -187,3 +187,5 @@ let minusSet = myset.subtracting(myset2)
 print(minusSet)
 
 
+let symDiffSet = myset.symmetricDifference(myset2)
+print(symDiffSet)
