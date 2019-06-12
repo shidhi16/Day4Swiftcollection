@@ -151,3 +151,39 @@ for (k,v) in countryDictionary
 {
     print(k,v)
 }
+
+var newC = Dictionary<String, Int>()
+
+var newArray : Array<Int>
+
+var myset = Set<String>()
+
+myset.insert("India")
+myset.insert("Canada")
+myset.insert("USA")
+
+myset.insert("India")
+
+print(myset)
+myset.insert("Russia")
+print(myset)
+
+var myset2 = Set<String>()
+
+myset.insert("India")
+myset.insert("Pakistan")
+myset.insert("Nepal")
+
+let InterSet = myset.intersection(myset2)
+print(InterSet)
+
+let unionSet = myset.union(myset2)
+print(unionSet)
+
+let isDisjoint = myset.isDisjoint(with: myset2)
+print(isDisjoint)
+
+let minusSet = myset.subtracting(myset2)
+print(minusSet)
+
+
